@@ -1,0 +1,737 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VOLT — клуб силы и драйва</title>
+  <meta name="description" content="VOLT — спортивный клуб нового уровня: силовые, функциональные тренировки, бокс, бег и кроссфит. Мощь без компромиссов.">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23000'/%3E%3Cpath d='M14 12h10l8 26 8-26h10L37 52H27z' fill='%23fff'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Inter+Tight:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Перейти к содержимому</a>
+
+  <div class="bg" aria-hidden="true">
+    <div class="bg__grid"></div>
+    <div class="bg__glow bg__glow--1" data-parallax="0.18"></div>
+    <div class="bg__glow bg__glow--2" data-parallax="-0.12"></div>
+    <div class="bg__grain"></div>
+  </div>
+  <div class="spotlight" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"><span></span></div>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a class="logo" href="#top" aria-label="VOLT — на главную">
+        <svg class="logo__mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M6 5h8l6 20 6-20h8L24 35h-8z"/></svg>
+        <span class="logo__text">VOLT</span>
+      </a>
+      <nav class="nav__links" aria-label="Основная навигация">
+        <a href="#advantages">Почему мы</a>
+        <a href="#programs">Программы</a>
+        <a href="#results">Результаты</a>
+        <a href="#trainers">Тренеры</a>
+        <a href="#schedule">Расписание</a>
+        <a href="#pricing">Цены</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="btn btn--light btn--sm magnetic nav__cta" href="#join"><span>Пробная тренировка</span></a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Открыть меню"><span></span><span></span></button>
+    </div>
+  </header>
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <nav aria-label="Мобильная навигация">
+      <a href="#advantages">Почему мы</a>
+      <a href="#programs">Программы</a>
+      <a href="#results">Результаты</a>
+      <a href="#trainers">Тренеры</a>
+      <a href="#schedule">Расписание</a>
+      <a href="#pricing">Цены</a>
+      <a href="#faq">FAQ</a>
+      <a href="#join" class="mobile-menu__cta">Пробная тренировка →</a>
+    </nav>
+  </div>
+
+  <main id="main">
+    <!-- 1. HERO -->
+    <section class="hero" id="top">
+      <div class="hero__streaks" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      <svg class="hero__shape" viewBox="0 0 600 600" aria-hidden="true" data-parallax="-0.08">
+        <defs>
+          <radialGradient id="core" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#fff" stop-opacity=".9"/>
+            <stop offset="35%" stop-color="#bbb" stop-opacity=".25"/>
+            <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+          </radialGradient>
+          <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+        </defs>
+        <circle cx="300" cy="300" r="220" fill="url(#core)" class="shape__core"/>
+        <g class="shape__ring shape__ring--1" filter="url(#glow)"><circle cx="300" cy="300" r="250" /></g>
+        <g class="shape__ring shape__ring--2" filter="url(#glow)"><circle cx="300" cy="300" r="190" /></g>
+        <g class="shape__ring shape__ring--3"><circle cx="300" cy="300" r="140" /></g>
+        <g class="shape__lines" filter="url(#glow)">
+          <path class="draw" d="M120 470 L250 300 L330 360 L480 130"/>
+          <path class="draw d2" d="M90 380 L210 250 L300 300 L520 200"/>
+          <path class="draw d3" d="M300 80 L250 300 L360 300 L300 520"/>
+        </g>
+        <g class="shape__dots"><circle cx="250" cy="300" r="7"/><circle cx="330" cy="360" r="6"/><circle cx="480" cy="130" r="8"/><circle cx="120" cy="470" r="6"/></g>
+      </svg>
+
+      <div class="container hero__inner">
+        <p class="eyebrow hero__eyebrow"><span class="pulse-dot"></span> Клуб силы и драйва · Москва · 24/7</p>
+        <h1 class="hero__title" aria-label="Стань сильнее всех. Без компромиссов.">
+          <span class="line split" aria-hidden="true">Стань</span>
+          <span class="line split glitch" data-text="СИЛЬНЕЕ" aria-hidden="true">Сильнее</span>
+          <span class="line split outline" aria-hidden="true">всех</span>
+        </h1>
+        <div class="hero__bottom">
+          <p class="hero__lead">VOLT — это 3&nbsp;000&nbsp;м² железа, ринга и беговой дорожки. Программы под твою цель, тренеры-чемпионы и атмосфера, в которой невозможно сдаться.</p>
+          <div class="hero__ctas">
+            <a class="btn btn--light magnetic" href="#join"><span>Начать бесплатно</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+            <a class="btn btn--ghost magnetic" href="#programs"><span>Выбрать программу</span></a>
+          </div>
+        </div>
+        <ul class="hero__stats" aria-label="Клуб в цифрах">
+          <li><b><span class="count" data-to="4200">0</span>+</b><span>атлетов в клубе</span></li>
+          <li><b><span class="count" data-to="38">0</span></b><span>тренеров-профи</span></li>
+          <li><b><span class="count" data-to="120">0</span>+</b><span>тренировок в неделю</span></li>
+          <li><b>24/7</b><span>открыто всегда</span></li>
+        </ul>
+      </div>
+      <a class="hero__scroll" href="#advantages" aria-label="Листать вниз"><span></span></a>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__row" data-speed="-0.5"><span>СИЛА ◆ СКОРОСТЬ ◆ ВЫНОСЛИВОСТЬ ◆ ДИСЦИПЛИНА ◆ ДРАЙВ ◆ СИЛА ◆ СКОРОСТЬ ◆ ВЫНОСЛИВОСТЬ ◆ ДИСЦИПЛИНА ◆ ДРАЙВ ◆&nbsp;</span><span>СИЛА ◆ СКОРОСТЬ ◆ ВЫНОСЛИВОСТЬ ◆ ДИСЦИПЛИНА ◆ ДРАЙВ ◆ СИЛА ◆ СКОРОСТЬ ◆ ВЫНОСЛИВОСТЬ ◆ ДИСЦИПЛИНА ◆ ДРАЙВ ◆&nbsp;</span></div>
+    </div>
+
+    <!-- 2. ADVANTAGES -->
+    <section class="section advantages" id="advantages">
+      <div class="container">
+        <header class="sec-head">
+          <p class="eyebrow reveal">01 / Почему VOLT</p>
+          <h2 class="sec-title reveal reveal--skew">Здесь <span class="outline">ломают</span><br>пределы</h2>
+        </header>
+        <div class="adv-grid">
+          <article class="adv reveal reveal--up tilt" style="--d:0s">
+            <span class="adv__num">01</span>
+            <svg class="adv__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M4 20v8M10 14v20M38 14v20M44 20v8M10 24h28"/></svg>
+            <h3>Железо топ-уровня</h3>
+            <p>220 единиц оборудования: помосты для тяжёлой атлетики, стойки, 8 тонн свободных весов.</p>
+          </article>
+          <article class="adv reveal reveal--up tilt" style="--d:.08s">
+            <span class="adv__num">02</span>
+            <svg class="adv__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M26 4 10 28h12l-2 16 18-26H26z"/></svg>
+            <h3>Тренеры-чемпионы</h3>
+            <p>Мастера спорта и призёры чемпионатов. Каждый сдаёт внутреннюю аттестацию дважды в год.</p>
+          </article>
+          <article class="adv reveal reveal--up tilt" style="--d:.16s">
+            <span class="adv__num">03</span>
+            <svg class="adv__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M4 36 16 22l8 8 20-20M32 10h12v12"/></svg>
+            <h3>Прогресс в цифрах</h3>
+            <p>Тесты силы и состава тела каждые 4 недели. Ты видишь рост, а не догадываешься о нём.</p>
+          </article>
+          <article class="adv reveal reveal--up tilt" style="--d:.24s">
+            <span class="adv__num">04</span>
+            <svg class="adv__icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="18"/><path d="M24 12v12l8 6"/></svg>
+            <h3>Открыто 24/7</h3>
+            <p>Тренируйся в 6 утра или в 2 ночи. Вход по лицу, без очередей и администраторов.</p>
+          </article>
+          <article class="adv reveal reveal--up tilt" style="--d:.32s">
+            <span class="adv__num">05</span>
+            <svg class="adv__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 40c4-12 10-18 16-18s12 6 16 18M24 22a8 8 0 1 0 0-16 8 8 0 0 0 0 16z"/></svg>
+            <h3>Восстановление</h3>
+            <p>Сауна, ледяная купель, массажная зона и спортивный бар с протеиновыми коктейлями.</p>
+          </article>
+          <article class="adv reveal reveal--up tilt" style="--d:.40s">
+            <span class="adv__num">06</span>
+            <svg class="adv__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M6 24h8l4-10 8 20 4-10h12"/></svg>
+            <h3>Комьюнити</h3>
+            <p>Старты, челленджи и выезды каждый месяц. Здесь тебя толкают вперёд, а не оценивают.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. PROGRAMS -->
+    <section class="section programs angled" id="programs">
+      <div class="container">
+        <header class="sec-head sec-head--row">
+          <div>
+            <p class="eyebrow reveal">02 / Программы</p>
+            <h2 class="sec-title reveal reveal--skew">Выбери свою <span class="outline">войну</span></h2>
+          </div>
+          <p class="sec-lead reveal">Шесть направлений: от первого подхода к штанге до подготовки к марафону. Каждая программа — чёткий план, контроль и результат.</p>
+        </header>
+
+        <div class="tabs reveal reveal--up">
+          <div class="tabs__list" role="tablist" aria-label="Программы тренировок">
+            <button role="tab" id="tab-1" aria-controls="panel-1" aria-selected="true" tabindex="0"><span>01</span>Сила</button>
+            <button role="tab" id="tab-2" aria-controls="panel-2" aria-selected="false" tabindex="-1"><span>02</span>Функционал</button>
+            <button role="tab" id="tab-3" aria-controls="panel-3" aria-selected="false" tabindex="-1"><span>03</span>Бокс</button>
+            <button role="tab" id="tab-4" aria-controls="panel-4" aria-selected="false" tabindex="-1"><span>04</span>Бег</button>
+            <button role="tab" id="tab-5" aria-controls="panel-5" aria-selected="false" tabindex="-1"><span>05</span>Кроссфит</button>
+            <button role="tab" id="tab-6" aria-controls="panel-6" aria-selected="false" tabindex="-1"><span>06</span>Мобильность</button>
+          </div>
+
+          <div class="tabs__panels">
+            <div class="panel is-active" role="tabpanel" id="panel-1" aria-labelledby="tab-1" tabindex="0">
+              <div class="panel__main">
+                <p class="panel__kicker">Strength Lab</p>
+                <h3 class="panel__title">Сила</h3>
+                <p class="panel__desc">Базовые движения — присед, жим, становая — по периодизированной программе. Цель: прибавить 20–30% к рабочим весам за 12 недель без травм.</p>
+                <ul class="panel__meta">
+                  <li><small>Уровень</small><b>Новичок → PRO</b></li>
+                  <li><small>Длительность</small><b>12 недель</b></li>
+                  <li><small>В неделю</small><b>3 тренировки</b></li>
+                  <li><small>Занятие</small><b>75 мин</b></li>
+                </ul>
+              </div>
+              <div class="panel__side">
+                <h4>Что входит</h4>
+                <ul class="check">
+                  <li>Тест 1ПМ на старте и в финале</li>
+                  <li>Индивидуальный план прогрессии</li>
+                  <li>Разбор техники на видео</li>
+                  <li>Чат с тренером 7 дней в неделю</li>
+                </ul>
+                <p class="panel__price"><b>7 900 ₽</b><span>/ месяц</span></p>
+                <a class="btn btn--light magnetic" href="#join" data-program="strength"><span>Записаться</span></a>
+              </div>
+              <span class="panel__bg" aria-hidden="true">01</span>
+            </div>
+
+            <div class="panel" role="tabpanel" id="panel-2" aria-labelledby="tab-2" tabindex="0" hidden>
+              <div class="panel__main">
+                <p class="panel__kicker">Functional</p>
+                <h3 class="panel__title">Функционал</h3>
+                <p class="panel__desc">Круговые тренировки с гирями, канатами, санями и собственным весом. Сжигаем жир, строим выносливость и тело, готовое к любой нагрузке.</p>
+                <ul class="panel__meta">
+                  <li><small>Уровень</small><b>Любой</b></li>
+                  <li><small>Длительность</small><b>8 недель</b></li>
+                  <li><small>В неделю</small><b>3–4 тренировки</b></li>
+                  <li><small>Занятие</small><b>55 мин</b></li>
+                </ul>
+              </div>
+              <div class="panel__side">
+                <h4>Что входит</h4>
+                <ul class="check">
+                  <li>Мини-группы до 12 человек</li>
+                  <li>Пульсометр на каждой тренировке</li>
+                  <li>Замеры состава тела раз в месяц</li>
+                  <li>План питания от нутрициолога</li>
+                </ul>
+                <p class="panel__price"><b>6 500 ₽</b><span>/ месяц</span></p>
+                <a class="btn btn--light magnetic" href="#join" data-program="functional"><span>Записаться</span></a>
+              </div>
+              <span class="panel__bg" aria-hidden="true">02</span>
+            </div>
+
+            <div class="panel" role="tabpanel" id="panel-3" aria-labelledby="tab-3" tabindex="0" hidden>
+              <div class="panel__main">
+                <p class="panel__kicker">Fight Club</p>
+                <h3 class="panel__title">Бокс</h3>
+                <p class="panel__desc">Стойка, удары, защита, работа на лапах и мешках. Спарринги — по желанию и только после 8 недель базы. Голова ясная, удар тяжёлый.</p>
+                <ul class="panel__meta">
+                  <li><small>Уровень</small><b>Новичок → Боец</b></li>
+                  <li><small>Длительность</small><b>10 недель</b></li>
+                  <li><small>В неделю</small><b>3 тренировки</b></li>
+                  <li><small>Занятие</small><b>60 мин</b></li>
+                </ul>
+              </div>
+              <div class="panel__side">
+                <h4>Что входит</h4>
+                <ul class="check">
+                  <li>Ринг и 14 боксёрских мешков</li>
+                  <li>Бинты и перчатки на старте</li>
+                  <li>Работа на лапах с тренером</li>
+                  <li>Открытые спарринг-вечера</li>
+                </ul>
+                <p class="panel__price"><b>7 200 ₽</b><span>/ месяц</span></p>
+                <a class="btn btn--light magnetic" href="#join" data-program="boxing"><span>Записаться</span></a>
+              </div>
+              <span class="panel__bg" aria-hidden="true">03</span>
+            </div>
+
+            <div class="panel" role="tabpanel" id="panel-4" aria-labelledby="tab-4" tabindex="0" hidden>
+              <div class="panel__main">
+                <p class="panel__kicker">Run Club</p>
+                <h3 class="panel__title">Бег</h3>
+                <p class="panel__desc">От первых 5 км до полумарафона. Техника, интервалы, темповые и длительные — в зале на дорожках и на улице с клубом по выходным.</p>
+                <ul class="panel__meta">
+                  <li><small>Уровень</small><b>С нуля → 21 км</b></li>
+                  <li><small>Длительность</small><b>16 недель</b></li>
+                  <li><small>В неделю</small><b>3–5 тренировок</b></li>
+                  <li><small>Занятие</small><b>45–90 мин</b></li>
+                </ul>
+              </div>
+              <div class="panel__side">
+                <h4>Что входит</h4>
+                <ul class="check">
+                  <li>Анализ техники бега на видео</li>
+                  <li>Пульсовые зоны и тест ПАНО</li>
+                  <li>Групповые забеги по субботам</li>
+                  <li>Стартовый взнос на забег в финале</li>
+                </ul>
+                <p class="panel__price"><b>5 900 ₽</b><span>/ месяц</span></p>
+                <a class="btn btn--light magnetic" href="#join" data-program="running"><span>Записаться</span></a>
+              </div>
+              <span class="panel__bg" aria-hidden="true">04</span>
+            </div>
+
+            <div class="panel" role="tabpanel" id="panel-5" aria-labelledby="tab-5" tabindex="0" hidden>
+              <div class="panel__main">
+                <p class="panel__kicker">Volt WOD</p>
+                <h3 class="panel__title">Кроссфит</h3>
+                <p class="panel__desc">Тренировка дня на пределе: тяжёлая атлетика, гимнастика и метконы. Таблица результатов, соревнование с собой и с залом.</p>
+                <ul class="panel__meta">
+                  <li><small>Уровень</small><b>Средний → PRO</b></li>
+                  <li><small>Длительность</small><b>Без срока</b></li>
+                  <li><small>В неделю</small><b>4–5 тренировок</b></li>
+                  <li><small>Занятие</small><b>60 мин</b></li>
+                </ul>
+              </div>
+              <div class="panel__side">
+                <h4>Что входит</h4>
+                <ul class="check">
+                  <li>Вводный курс «Фундамент» 2 недели</li>
+                  <li>Ежедневный WOD и рейтинг</li>
+                  <li>Внутренние старты раз в квартал</li>
+                  <li>Скидка на экипировку 15%</li>
+                </ul>
+                <p class="panel__price"><b>8 400 ₽</b><span>/ месяц</span></p>
+                <a class="btn btn--light magnetic" href="#join" data-program="crossfit"><span>Записаться</span></a>
+              </div>
+              <span class="panel__bg" aria-hidden="true">05</span>
+            </div>
+
+            <div class="panel" role="tabpanel" id="panel-6" aria-labelledby="tab-6" tabindex="0" hidden>
+              <div class="panel__main">
+                <p class="panel__kicker">Mobility</p>
+                <h3 class="panel__title">Мобильность</h3>
+                <p class="panel__desc">Подвижность суставов, растяжка и дыхание. Убирает зажимы, ускоряет восстановление и делает каждое движение в зале мощнее.</p>
+                <ul class="panel__meta">
+                  <li><small>Уровень</small><b>Любой</b></li>
+                  <li><small>Длительность</small><b>6 недель</b></li>
+                  <li><small>В неделю</small><b>2 тренировки</b></li>
+                  <li><small>Занятие</small><b>50 мин</b></li>
+                </ul>
+              </div>
+              <div class="panel__side">
+                <h4>Что входит</h4>
+                <ul class="check">
+                  <li>Тест подвижности на старте</li>
+                  <li>Комплекс для дома на каждый день</li>
+                  <li>Миофасциальный релиз</li>
+                  <li>Дыхательные практики</li>
+                </ul>
+                <p class="panel__price"><b>4 500 ₽</b><span>/ месяц</span></p>
+                <a class="btn btn--light magnetic" href="#join" data-program="mobility"><span>Записаться</span></a>
+              </div>
+              <span class="panel__bg" aria-hidden="true">06</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. RESULTS -->
+    <section class="section results" id="results">
+      <div class="container">
+        <header class="sec-head">
+          <p class="eyebrow reveal">03 / Результаты</p>
+          <h2 class="sec-title reveal reveal--skew">Цифры <span class="outline">не врут</span></h2>
+        </header>
+
+        <div class="counters">
+          <div class="counter reveal reveal--scale" style="--d:0s"><b><span class="count" data-to="18600">0</span></b><span>кг жира сожжено участниками за 2025 год</span></div>
+          <div class="counter reveal reveal--scale" style="--d:.1s"><b>+<span class="count" data-to="27">0</span>%</b><span>средний рост силы за 12 недель</span></div>
+          <div class="counter reveal reveal--scale" style="--d:.2s"><b><span class="count" data-to="94">0</span>%</b><span>продлевают абонемент после первого месяца</span></div>
+          <div class="counter reveal reveal--scale" style="--d:.3s"><b><span class="count" data-to="312">0</span></b><span>финишей на марафонах и полумарафонах</span></div>
+        </div>
+
+        <div class="results__grid">
+          <div class="bars reveal reveal--left">
+            <h3 class="bars__title">До / после: средние показатели<br><small>12 недель, программа «Сила», 140 участников</small></h3>
+            <div class="bar" style="--before:42%;--after:68%">
+              <div class="bar__head"><span>Присед, кг</span><span><em>85</em> → <b>122</b></span></div>
+              <div class="bar__track"><i class="bar__before"></i><i class="bar__after"></i></div>
+            </div>
+            <div class="bar" style="--before:38%;--after:59%">
+              <div class="bar__head"><span>Становая тяга, кг</span><span><em>100</em> → <b>148</b></span></div>
+              <div class="bar__track"><i class="bar__before"></i><i class="bar__after"></i></div>
+            </div>
+            <div class="bar" style="--before:70%;--after:44%">
+              <div class="bar__head"><span>Процент жира, %</span><span><em>27</em> → <b>18</b></span></div>
+              <div class="bar__track"><i class="bar__before"></i><i class="bar__after"></i></div>
+            </div>
+            <div class="bar" style="--before:30%;--after:82%">
+              <div class="bar__head"><span>Подтягивания, раз</span><span><em>3</em> → <b>12</b></span></div>
+              <div class="bar__track"><i class="bar__before"></i><i class="bar__after"></i></div>
+            </div>
+            <p class="bars__legend"><span class="l-before">До</span><span class="l-after">После</span></p>
+          </div>
+
+          <div class="stories">
+            <article class="story reveal reveal--right" style="--d:0s">
+              <div class="story__top"><span class="story__metric">−24 кг</span><span class="story__time">за 7 месяцев</span></div>
+              <p>«Пришёл с весом 112 кг и одышкой на лестнице. Сейчас 88 и бегу свои первые 10 км. Самое сложное было — прийти во второй раз».</p>
+              <footer><b>Денис К.</b>, 34 года · Функционал + Бег</footer>
+            </article>
+            <article class="story reveal reveal--right" style="--d:.1s">
+              <div class="story__top"><span class="story__metric">150 кг</span><span class="story__time">становая за год</span></div>
+              <p>«Начинала с пустого грифа. Через год тяну 150 и выступила на первом турнире по пауэрлифтингу. Взяла бронзу!»</p>
+              <footer><b>Алина М.</b>, 27 лет · Сила</footer>
+            </article>
+            <article class="story reveal reveal--right" style="--d:.2s">
+              <div class="story__top"><span class="story__metric">1:38</span><span class="story__time">полумарафон</span></div>
+              <p>«Ставил цель выбежать из двух часов. Тренер сказал: целься в 1:40. Выбежал 1:38. Теперь готовлюсь к марафону».</p>
+              <footer><b>Игорь С.</b>, 41 год · Бег</footer>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BIG BAND -->
+    <div class="band" aria-hidden="true">
+      <div class="band__row" data-speed="0.6"><span>НЕ ОСТАНАВЛИВАЙСЯ — НЕ ОСТАНАВЛИВАЙСЯ — НЕ ОСТАНАВЛИВАЙСЯ — НЕ ОСТАНАВЛИВАЙСЯ —&nbsp;</span><span>НЕ ОСТАНАВЛИВАЙСЯ — НЕ ОСТАНАВЛИВАЙСЯ — НЕ ОСТАНАВЛИВАЙСЯ — НЕ ОСТАНАВЛИВАЙСЯ —&nbsp;</span></div>
+      <div class="band__row band__row--outline" data-speed="-0.6"><span>ЕЩЁ ОДИН ПОДХОД ✕ ЕЩЁ ОДИН ПОДХОД ✕ ЕЩЁ ОДИН ПОДХОД ✕ ЕЩЁ ОДИН ПОДХОД ✕&nbsp;</span><span>ЕЩЁ ОДИН ПОДХОД ✕ ЕЩЁ ОДИН ПОДХОД ✕ ЕЩЁ ОДИН ПОДХОД ✕ ЕЩЁ ОДИН ПОДХОД ✕&nbsp;</span></div>
+    </div>
+
+    <!-- 5. TRAINERS -->
+    <section class="section trainers" id="trainers">
+      <div class="container">
+        <header class="sec-head sec-head--row">
+          <div>
+            <p class="eyebrow reveal">04 / Тренеры</p>
+            <h2 class="sec-title reveal reveal--skew">Команда <span class="outline">ударной</span> силы</h2>
+          </div>
+          <p class="sec-lead reveal">Опыт, титулы и умение довести до результата каждого. Тренер подбирается под твою цель на первой встрече.</p>
+        </header>
+        <div class="team">
+          <article class="coach reveal reveal--up tilt" style="--d:0s">
+            <div class="coach__frame"><svg class="coach__sil" viewBox="0 0 200 220" aria-hidden="true"><path d="M100 30a22 22 0 1 1 0 44 22 22 0 0 1 0-44zM40 120l30-30h60l30 30-14 14-26-22v60l20 50h-24l-16-40-16 40H60l20-50v-60l-26 22z"/></svg><span class="coach__init">МВ</span></div>
+            <h3>Максим Волков</h3>
+            <p class="coach__role">Пауэрлифтинг · Сила</p>
+            <ul class="coach__facts"><li><b>14</b> лет опыта</li><li>МСМК</li></ul>
+          </article>
+          <article class="coach reveal reveal--up tilt" style="--d:.08s">
+            <div class="coach__frame"><svg class="coach__sil" viewBox="0 0 200 220" aria-hidden="true"><path d="M110 28a20 20 0 1 1 0 40 20 20 0 0 1 0-40zM60 96l40-20 30 10 30 30-12 12-24-18-8 46 30 54h-26l-24-44-22 44H76l18-54 8-40-22 10-10 30-16-4z"/></svg><span class="coach__init">ЕС</span></div>
+            <h3>Екатерина Стрельцова</h3>
+            <p class="coach__role">Функционал · Кроссфит</p>
+            <ul class="coach__facts"><li><b>9</b> лет опыта</li><li>Финалист Open</li></ul>
+          </article>
+          <article class="coach reveal reveal--up tilt" style="--d:.16s">
+            <div class="coach__frame"><svg class="coach__sil" viewBox="0 0 200 220" aria-hidden="true"><path d="M96 30a22 22 0 1 1 0 44 22 22 0 0 1 0-44zM58 82h22l-6 30 34-26h30l-20 20 26 18-12 14-30-18v56l18 34H96l-12-30-14 30H46l22-38v-44l-22 12-8-14z"/></svg><span class="coach__init">РГ</span></div>
+            <h3>Руслан Гараев</h3>
+            <p class="coach__role">Бокс · Кикбоксинг</p>
+            <ul class="coach__facts"><li><b>17</b> лет опыта</li><li>МС по боксу</li></ul>
+          </article>
+          <article class="coach reveal reveal--up tilt" style="--d:.24s">
+            <div class="coach__frame"><svg class="coach__sil" viewBox="0 0 200 220" aria-hidden="true"><path d="M118 26a20 20 0 1 1 0 40 20 20 0 0 1 0-40zM84 76l36 4 20 34 30 6-4 16-40-6-12-18-10 34 30 30-14 34-18-6 10-24-30-26-20 40-22-8 30-58 6-30-20 10-12 26-16-6 16-36z"/></svg><span class="coach__init">АЛ</span></div>
+            <h3>Анна Лебедева</h3>
+            <p class="coach__role">Бег · Выносливость</p>
+            <ul class="coach__facts"><li><b>11</b> лет опыта</li><li>Марафон 2:49</li></ul>
+          </article>
+          <article class="coach reveal reveal--up tilt" style="--d:.32s">
+            <div class="coach__frame"><svg class="coach__sil" viewBox="0 0 200 220" aria-hidden="true"><path d="M100 26a22 22 0 1 1 0 44 22 22 0 0 1 0-44zM30 80h140v16h-46v46l18 70h-22l-20-60-20 60H58l18-70V96H30z"/></svg><span class="coach__init">ДО</span></div>
+            <h3>Дмитрий Орлов</h3>
+            <p class="coach__role">Тяжёлая атлетика</p>
+            <ul class="coach__facts"><li><b>12</b> лет опыта</li><li>КМС, судья</li></ul>
+          </article>
+          <article class="coach reveal reveal--up tilt" style="--d:.40s">
+            <div class="coach__frame"><svg class="coach__sil" viewBox="0 0 200 220" aria-hidden="true"><path d="M100 40a20 20 0 1 1 0 40 20 20 0 0 1 0-40zM40 150l40-50h40l40 50-14 10-30-30v20l40 50H38l40-50v-20l-24 30z"/></svg><span class="coach__init">ВК</span></div>
+            <h3>Вера Ким</h3>
+            <p class="coach__role">Мобильность · Реабилитация</p>
+            <ul class="coach__facts"><li><b>8</b> лет опыта</li><li>Физиотерапевт</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. SCHEDULE -->
+    <section class="section schedule angled angled--rev" id="schedule">
+      <div class="container">
+        <header class="sec-head sec-head--row">
+          <div>
+            <p class="eyebrow reveal">05 / Расписание</p>
+            <h2 class="sec-title reveal reveal--skew">Неделя <span class="outline">на пределе</span></h2>
+          </div>
+          <div class="filters reveal" role="group" aria-label="Фильтр расписания">
+            <button type="button" class="chip is-on" data-filter="all" aria-pressed="true">Все</button>
+            <button type="button" class="chip" data-filter="str" aria-pressed="false">Сила</button>
+            <button type="button" class="chip" data-filter="fun" aria-pressed="false">Функционал</button>
+            <button type="button" class="chip" data-filter="box" aria-pressed="false">Бокс</button>
+            <button type="button" class="chip" data-filter="run" aria-pressed="false">Бег</button>
+            <button type="button" class="chip" data-filter="cf" aria-pressed="false">Кроссфит</button>
+          </div>
+        </header>
+        <div class="timetable reveal reveal--up" tabindex="0" role="region" aria-label="Расписание групповых тренировок, прокручивается по горизонтали">
+          <table>
+            <thead><tr><th scope="col">Время</th><th scope="col">Пн</th><th scope="col">Вт</th><th scope="col">Ср</th><th scope="col">Чт</th><th scope="col">Пт</th><th scope="col">Сб</th><th scope="col">Вс</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">07:00</th>
+                <td><span class="cls" data-t="fun">Функционал<small>Стрельцова</small></span></td>
+                <td><span class="cls" data-t="run">Бег<small>Лебедева</small></span></td>
+                <td><span class="cls" data-t="fun">Функционал<small>Стрельцова</small></span></td>
+                <td><span class="cls" data-t="run">Бег<small>Лебедева</small></span></td>
+                <td><span class="cls" data-t="cf">WOD<small>Стрельцова</small></span></td>
+                <td><span class="cls" data-t="run">Забег 10 км<small>Лебедева</small></span></td>
+                <td></td></tr>
+              <tr><th scope="row">10:00</th>
+                <td><span class="cls" data-t="str">Сила<small>Волков</small></span></td>
+                <td></td>
+                <td><span class="cls" data-t="str">Сила<small>Орлов</small></span></td>
+                <td></td>
+                <td><span class="cls" data-t="str">Сила<small>Волков</small></span></td>
+                <td><span class="cls" data-t="cf">WOD<small>Стрельцова</small></span></td>
+                <td><span class="cls" data-t="fun">Мобильность<small>Ким</small></span></td></tr>
+              <tr><th scope="row">13:00</th>
+                <td></td>
+                <td><span class="cls" data-t="box">Бокс<small>Гараев</small></span></td>
+                <td></td>
+                <td><span class="cls" data-t="box">Бокс<small>Гараев</small></span></td>
+                <td></td>
+                <td><span class="cls" data-t="box">Спарринги<small>Гараев</small></span></td>
+                <td></td></tr>
+              <tr><th scope="row">19:00</th>
+                <td><span class="cls" data-t="cf">WOD<small>Стрельцова</small></span></td>
+                <td><span class="cls" data-t="str">Сила<small>Волков</small></span></td>
+                <td><span class="cls" data-t="box">Бокс<small>Гараев</small></span></td>
+                <td><span class="cls" data-t="str">Тяжёлая атл.<small>Орлов</small></span></td>
+                <td><span class="cls" data-t="box">Бокс<small>Гараев</small></span></td>
+                <td></td>
+                <td><span class="cls" data-t="str">Open Gym<small>Орлов</small></span></td></tr>
+              <tr><th scope="row">21:00</th>
+                <td><span class="cls" data-t="box">Бокс<small>Гараев</small></span></td>
+                <td><span class="cls" data-t="cf">WOD<small>Стрельцова</small></span></td>
+                <td><span class="cls" data-t="run">Интервалы<small>Лебедева</small></span></td>
+                <td><span class="cls" data-t="cf">WOD<small>Стрельцова</small></span></td>
+                <td><span class="cls" data-t="fun">Функционал<small>Стрельцова</small></span></td>
+                <td></td>
+                <td></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="timetable__hint">Свободный тренажёрный зал открыт 24/7. На мобильном листай таблицу вбок →</p>
+      </div>
+    </section>
+
+    <!-- 7. PRICING -->
+    <section class="section pricing" id="pricing">
+      <div class="container">
+        <header class="sec-head sec-head--center">
+          <p class="eyebrow reveal">06 / Абонементы</p>
+          <h2 class="sec-title reveal reveal--skew">Плати за <span class="outline">результат</span></h2>
+        </header>
+        <div class="plans">
+          <article class="plan reveal reveal--up" style="--d:0s">
+            <p class="plan__name">Старт</p>
+            <p class="plan__price"><b>3 900</b><span>₽ / мес</span></p>
+            <p class="plan__desc">Свободный зал для тех, кто знает, что делать.</p>
+            <ul class="check">
+              <li>Тренажёрный зал 24/7</li>
+              <li>Вводный инструктаж</li>
+              <li>Раздевалки и душ</li>
+              <li class="no">Групповые программы</li>
+              <li class="no">Персональный план</li>
+            </ul>
+            <a class="btn btn--ghost magnetic" href="#join"><span>Выбрать</span></a>
+          </article>
+          <article class="plan plan--hot reveal reveal--up" style="--d:.1s">
+            <span class="plan__badge">Хит</span>
+            <p class="plan__name">Драйв</p>
+            <p class="plan__price"><b>6 900</b><span>₽ / мес</span></p>
+            <p class="plan__desc">Зал + любые групповые программы без ограничений.</p>
+            <ul class="check">
+              <li>Всё из «Старта»</li>
+              <li>Все групповые тренировки</li>
+              <li>Тест состава тела раз в месяц</li>
+              <li>Сауна и ледяная купель</li>
+              <li class="no">Персональный тренер</li>
+            </ul>
+            <a class="btn btn--dark magnetic" href="#join"><span>Взять «Драйв»</span></a>
+          </article>
+          <article class="plan reveal reveal--up" style="--d:.2s">
+            <p class="plan__name">Максимум</p>
+            <p class="plan__price"><b>14 900</b><span>₽ / мес</span></p>
+            <p class="plan__desc">Персональное сопровождение до результата.</p>
+            <ul class="check">
+              <li>Всё из «Драйва»</li>
+              <li>8 персональных тренировок</li>
+              <li>План питания и контроль</li>
+              <li>Массаж 2 раза в месяц</li>
+              <li>Гостевые визиты для друга</li>
+            </ul>
+            <a class="btn btn--ghost magnetic" href="#join"><span>Выбрать</span></a>
+          </article>
+        </div>
+        <p class="pricing__note reveal">Годовой абонемент — минус 20%. Заморозка до 60 дней бесплатно. Первая тренировка — 0 ₽.</p>
+      </div>
+    </section>
+
+    <!-- 8. TESTIMONIALS -->
+    <section class="section reviews" id="reviews">
+      <div class="container">
+        <header class="sec-head">
+          <p class="eyebrow reveal">07 / Отзывы</p>
+          <h2 class="sec-title reveal reveal--skew">Говорят <span class="outline">атлеты</span></h2>
+        </header>
+        <div class="reviews__grid">
+          <figure class="review reveal reveal--up" style="--d:0s">
+            <div class="stars" aria-label="Оценка 5 из 5">★★★★★</div>
+            <blockquote>«Лучший зал, где я был. Тут нет понтов — есть работа. Тренер реально следит за техникой, а не листает телефон».</blockquote>
+            <figcaption><span class="ava" aria-hidden="true">ПН</span><span><b>Павел Н.</b><small>в клубе 2 года</small></span></figcaption>
+          </figure>
+          <figure class="review reveal reveal--up" style="--d:.1s">
+            <div class="stars" aria-label="Оценка 5 из 5">★★★★★</div>
+            <blockquote>«Пошла на бокс снять стресс после работы. Через три месяца — минус 9 кг и спокойная голова. Гараев — огонь».</blockquote>
+            <figcaption><span class="ava" aria-hidden="true">ОТ</span><span><b>Ольга Т.</b><small>Бокс, 8 месяцев</small></span></figcaption>
+          </figure>
+          <figure class="review reveal reveal--up" style="--d:.2s">
+            <div class="stars" aria-label="Оценка 5 из 5">★★★★★</div>
+            <blockquote>«Тренируюсь в 5 утра перед сменой — зал пустой, всё работает, музыка качает. За это и плачу».</blockquote>
+            <figcaption><span class="ava" aria-hidden="true">АР</span><span><b>Артур Р.</b><small>«Старт», 1 год</small></span></figcaption>
+          </figure>
+          <figure class="review reveal reveal--up" style="--d:.3s">
+            <div class="stars" aria-label="Оценка 5 из 5">★★★★★</div>
+            <blockquote>«WOD в семь вечера — это моя терапия. Комьюнити такое, что пропустить тренировку стыдно перед своими».</blockquote>
+            <figcaption><span class="ava" aria-hidden="true">КЗ</span><span><b>Ксения З.</b><small>Кроссфит, 1,5 года</small></span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. FAQ -->
+    <section class="section faq" id="faq">
+      <div class="container faq__wrap">
+        <header class="sec-head">
+          <p class="eyebrow reveal">08 / Вопросы</p>
+          <h2 class="sec-title reveal reveal--skew">Коротко <span class="outline">и честно</span></h2>
+          <p class="sec-lead reveal">Не нашёл ответ? Напиши в форме ниже — перезвоним за 15 минут.</p>
+        </header>
+        <div class="faq__list">
+          <details class="faq__item reveal reveal--right" style="--d:0s">
+            <summary>Я никогда не тренировался. Мне к вам можно?<i aria-hidden="true"></i></summary>
+            <div class="faq__body"><p>Нужно. 60% наших атлетов начинали с нуля. На первой встрече тренер проведёт тест и подберёт стартовую нагрузку — без героизма и травм.</p></div>
+          </details>
+          <details class="faq__item reveal reveal--right" style="--d:.06s">
+            <summary>Как проходит пробная тренировка?<i aria-hidden="true"></i></summary>
+            <div class="faq__body"><p>Это 60 минут с тренером: знакомство с клубом, мини-тест силы и выносливости и пробное занятие в выбранной программе. Бесплатно и без обязательств.</p></div>
+          </details>
+          <details class="faq__item reveal reveal--right" style="--d:.12s">
+            <summary>Можно заморозить абонемент?<i aria-hidden="true"></i></summary>
+            <div class="faq__body"><p>Да, до 60 дней в год бесплатно — по больничному, в отпуске или командировке. Заморозка оформляется в приложении за минуту.</p></div>
+          </details>
+          <details class="faq__item reveal reveal--right" style="--d:.18s">
+            <summary>Что взять с собой?<i aria-hidden="true"></i></summary>
+            <div class="faq__body"><p>Форму, кроссовки и бутылку воды. Полотенца, замки и бинты для бокса на первые тренировки — от клуба.</p></div>
+          </details>
+          <details class="faq__item reveal reveal--right" style="--d:.24s">
+            <summary>Есть парковка и душ?<i aria-hidden="true"></i></summary>
+            <div class="faq__body"><p>Бесплатная парковка на 80 мест, просторные раздевалки с душем, фенами и косметикой. Сауна и ледяная купель — в тарифах «Драйв» и «Максимум».</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. CTA -->
+    <section class="section join" id="join">
+      <div class="join__glow" aria-hidden="true"></div>
+      <div class="container join__grid">
+        <div class="join__copy">
+          <p class="eyebrow reveal">09 / Старт</p>
+          <h2 class="join__title reveal reveal--skew">Первая<br>тренировка<br><span class="outline glow-pulse">бесплатно</span></h2>
+          <p class="sec-lead reveal">Оставь заявку — тренер позвонит, подберёт программу и время. Пробное занятие, тест силы и экскурсия по клубу за 0 ₽.</p>
+          <ul class="join__perks reveal">
+            <li>Ответ за 15 минут</li>
+            <li>Без обязательств</li>
+            <li>Форма и полотенце — от нас</li>
+          </ul>
+        </div>
+        <form class="form reveal reveal--right" novalidate>
+          <div class="form__body">
+            <h3 class="form__title">Записаться</h3>
+            <div class="field">
+              <label for="f-name">Имя</label>
+              <input id="f-name" name="name" type="text" autocomplete="given-name" placeholder="Как к тебе обращаться" required aria-describedby="e-name">
+              <p class="field__err" id="e-name">Введи имя — минимум 2 буквы</p>
+            </div>
+            <div class="field">
+              <label for="f-phone">Телефон</label>
+              <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 (900) 000-00-00" required aria-describedby="e-phone">
+              <p class="field__err" id="e-phone">Нужен номер из 11 цифр</p>
+            </div>
+            <div class="field">
+              <label for="f-program">Программа</label>
+              <div class="select">
+                <select id="f-program" name="program" required aria-describedby="e-program">
+                  <option value="">Выбери направление</option>
+                  <option value="strength">Сила</option>
+                  <option value="functional">Функционал</option>
+                  <option value="boxing">Бокс</option>
+                  <option value="running">Бег</option>
+                  <option value="crossfit">Кроссфит</option>
+                  <option value="mobility">Мобильность</option>
+                  <option value="unknown">Пока не знаю — подскажите</option>
+                </select>
+              </div>
+              <p class="field__err" id="e-program">Выбери программу</p>
+            </div>
+            <label class="consent field">
+              <input type="checkbox" name="consent" required aria-describedby="e-consent">
+              <span>Согласен на обработку персональных данных</span>
+              <p class="field__err" id="e-consent">Нужно согласие</p>
+            </label>
+            <button class="btn btn--light btn--block magnetic" type="submit"><span>Хочу на тренировку</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></button>
+            <p class="form__note">Это демо-форма: данные никуда не отправляются.</p>
+          </div>
+          <div class="form__success" hidden role="status" aria-live="polite" tabindex="-1">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28"/><path d="M20 33l8 8 16-18"/></svg>
+            <h3>Заявка принята!</h3>
+            <p>Тренер позвонит в течение 15 минут. А пока — разомнись.</p>
+            <button type="button" class="btn btn--ghost btn--sm form__again"><span>Отправить ещё</span></button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__giant" aria-hidden="true">VOLT</div>
+    <div class="container footer__grid">
+      <div>
+        <a class="logo" href="#top" aria-label="VOLT — наверх"><svg class="logo__mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M6 5h8l6 20 6-20h8L24 35h-8z"/></svg><span class="logo__text">VOLT</span></a>
+        <p class="footer__tag">Клуб силы и драйва. Вымышленный бренд — демонстрационный проект.</p>
+      </div>
+      <div>
+        <h4>Клуб</h4>
+        <p>Москва, ул. Стальная, 12<br>(вымышленный адрес)</p>
+        <p>Открыто 24/7</p>
+      </div>
+      <div>
+        <h4>Связь</h4>
+        <p><a href="tel:+70000000000">+7 (000) 000-00-00</a></p>
+        <p><a href="mailto:hello@volt.example">hello@volt.example</a></p>
+      </div>
+      <div>
+        <h4>Навигация</h4>
+        <p><a href="#programs">Программы</a> · <a href="#schedule">Расписание</a> · <a href="#pricing">Цены</a></p>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span id="year">2026</span> VOLT Athletic Club</span>
+      <a href="#top" class="to-top">Наверх ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
